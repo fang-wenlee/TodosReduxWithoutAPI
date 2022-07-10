@@ -1,10 +1,17 @@
-import "./styles.css";
+import "./app.css";
 
+import TodosList from "./todos/TodosList";
 export default function App() {
+  const todos = [
+    {
+      text: "working on Redux",
+      isCompleted: false
+    }
+  ];
+
   return (
     <div className="App">
-      <h1>Hello CodeSandbox</h1>
-      <h2>Start editing to see some magic happen!</h2>
+      <TodosList todos={todos} />
     </div>
   );
 }
