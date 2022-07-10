@@ -5,7 +5,7 @@ export const todos = (state = [], action) => {
   switch (type) {
     case CREATAE_TODO: {
       const newTodo = {
-        todo: payload.text,
+        text: payload.text,
         isCompleted: false
       };
       return state.concat(newTodo);

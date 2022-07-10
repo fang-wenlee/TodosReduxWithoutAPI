@@ -6,6 +6,10 @@ export default function App() {
     {
       text: "working on Redux",
       isCompleted: false
+    },
+    {
+      text: "connection to component",
+      isCompleted: false
     }
   ];
 
